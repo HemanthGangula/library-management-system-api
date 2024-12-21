@@ -32,7 +32,7 @@ python3 -m venv venv
 ```
 activate the environment
 ``` bash
-source venv/bin/activate
+source venv/bin/activate 
 ```
 Installing the requirements that are mention in the requirements.txt
 ```bash

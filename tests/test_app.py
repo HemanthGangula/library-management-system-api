@@ -11,7 +11,7 @@ class LibraryManagementSystemAPITestCase(unittest.TestCase):
         # Obtain authentication token
         response = self.client.post('/auth/login', json={
             'username': 'admin',
-            'password': 'password123'
+            'password': 'password1234'
         })
         # Ensure the login was successful before proceeding
         self.assertEqual(response.status_code, 200, "Failed to log in during setup.")
@@ -29,7 +29,7 @@ class LibraryManagementSystemAPITestCase(unittest.TestCase):
         # Test successful login
         response = self.client.post('/auth/login', json={
             'username': 'admin',
-            'password': 'password123'
+            'password': 'password1234'
         })
         self.assertEqual(response.status_code, 200)
         self.assertIn('token', json.loads(response.data))

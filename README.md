@@ -1,4 +1,3 @@
-
 # Library Management System API
 
 A Flask-based Library Management System API supporting CRUD operations for books and members, built with a focus on correctness, clean code, and functionality. Includes features like search, pagination, and token-based authentication.
@@ -23,7 +22,11 @@ A Flask-based Library Management System API supporting CRUD operations for books
 ```bash
 git clone https://github.com/HemanthGangula/library-management-system-api
 ```
-activate the virtual environment
+changing into project directory
+```bash
+cd library-management-system-api
+```
+creating virtual environment
 ```bash
 python3 -m venv venv
 ```
@@ -41,9 +44,17 @@ pip install -r requirements.txt
 python3 app.py
 ```
 
-## API Documentation
+3. Visit the application:
+```bash
+http://127.0.0.1:5000/
+```
 
-For detailed API documentation including all endpoints, authentication, request/response formats, and examples, please visit: xyz.com
+The Library Management System is now running. You can perform operations like adding books, managing members, searching, and more through the API endpoints.
+
+4. Deactivate the virtual environment when done:
+```bash
+deactivate
+```
 
 ## Testing
 

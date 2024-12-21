@@ -9,7 +9,7 @@ active_tokens: set = set()
 
 # Simple user store for demonstration purposes
 USER_DATA = {
-    "admin": "password123"
+    "admin": "password1234"
 }
 
 @bp.route('/login', methods=['POST'])

@@ -1,5 +1,5 @@
+from flask import Flask, send_from_directory
 import logging
-from flask import Flask
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -17,6 +17,11 @@ def create_app() -> Flask:
     app.register_blueprint(auth_bp)
     app.register_blueprint(books_bp)
     app.register_blueprint(members_bp)
+
+    # Serve frontend
+    @app.route('/')
+    def index():
+        return send_from_directory('static', 'index.html')
 
     return app
 

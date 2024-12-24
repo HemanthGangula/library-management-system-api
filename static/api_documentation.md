@@ -30,13 +30,11 @@ Welcome to the **Library Management System API** documentation. This guide provi
 12. [License](#license)
 13. [Contact](#contact)
 
----
 
 ## Introduction
 
 The **Library Management System API** is a Flask-based backend service designed to manage a library's resources efficiently. It supports CRUD (Create, Read, Update, Delete) operations for books and members, incorporates token-based authentication for security, and provides a minimal frontend interface to demonstrate its functionalities. This API is built with a focus on correctness, clean code, and scalability, making it an excellent project for both learning and practical applications.
 
----
 
 ## Authentication
 
@@ -117,7 +115,6 @@ Authentication is a crucial aspect of the Library Management System API, ensurin
   - Users send their current `token` to invalidate it.
   - This ensures that the token can no longer be used to access protected endpoints, enhancing security.
 
----
 
 ## Books Management
 
@@ -306,7 +303,6 @@ The Books Management section allows users to perform CRUD operations on the libr
   - Deletes the book with the specified `id` from the library.
   - Confirms deletion with a success message.
 
----
 
 ## Members Management
 
@@ -493,7 +489,6 @@ The Members Management section allows users to perform CRUD operations on the li
   - Deletes the member with the specified `id` from the library system.
   - Confirms deletion with a success message.
 
----
 
 ## Error Handling
 
@@ -578,7 +573,6 @@ Understanding the authentication flow is essential for interacting securely with
    - **Action:** For each protected request, the server validates the `token`.
    - **Result:** Valid tokens allow access; invalid or missing tokens result in `401 Unauthorized` errors.
 
----
 
 ### Test Coverage
 

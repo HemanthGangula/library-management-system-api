@@ -63,4 +63,4 @@ source venv/bin/activate
 python3 -m unittest discover tests
 ```
 
-
+If you're ready to develop a frontend for the Library Management System, refer to the detailed [API documentation](https://github.com/HemanthGangula/library-management-system-api/blob/main/static/api_documentation.md).
